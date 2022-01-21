@@ -12,7 +12,7 @@ Each note is an integer *(36-81 and 0)* that represents a MIDI note number. Thes
 ## Method
 We pre-processed the data by first scaling the data so the integers ranged from 0 to 47. We also chose to represent the chords as arpeggios (broken chords) which means that instead of predicting a chord (4 notes) we predict a single note at a time.
 
-We then trained some different neural network models, a basic RNN model, an LSTM model, a GRU model and a diluted CNN model with an LSTM layer. 
+We then trained some different neural network models, a basic RNN model, an LSTM model, a GRU model and a diluted CNN model with an LSTM layer. We trained the models by giving them a sequence of notes and asking them to predict the next note. 
 
 In order to evaluate the models we listen to the generated songs. 
 
